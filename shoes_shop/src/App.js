@@ -1,10 +1,15 @@
-
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Homepage/HomepageLayout';
+import Admin from './admin/AdminLayout'
 
 function App() {
   return (
-    <div className="bg-gradient-to-tr from-pink-400 to-purple-600
- w-full h-screen">
-      
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
     </div>
   );
 }
