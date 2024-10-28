@@ -6,7 +6,7 @@ import shoesmodel from "./model/ShoesModel.js";
 dotenv.config();
 
 const app = express();
-const port = 5000;
+const port = 3000;
 
 // Kết nối đến cơ sở dữ liệu
 connectDB();
