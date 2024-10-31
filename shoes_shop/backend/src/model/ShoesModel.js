@@ -37,10 +37,10 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    Status: {
-        type: Boolean,
-        required: true,
-    },
+    // Status: {
+    //     type: Boolean,
+    //     required: true,
+    // },
 });
 
 const ShoesModel = mongoose.model('Product', ProductSchema, 'Product');
